@@ -1,0 +1,31 @@
+{
+  "name": "rxsub",
+  "version": "1.2.3",
+  "description": "RxJS v6 Extensions for React's state management solution",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel src --out-dir es --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-decorators": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.4.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.5",
+    "rxjs": "^6.4.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "Chrome 45",
+    "IE 11"
+  ]
+}
