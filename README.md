@@ -82,6 +82,7 @@ import语法动态导入
 
 
 # POST：
-[base-babel基础使用](https://github.com/canwhite/qc-babel-test)
+[babel基础使用](https://github.com/canwhite/qc-babel-test)  
+
 [阮一峰的装饰器讲解](https://www.bookstack.cn/read/es6-3rd/spilt.2.docs-decorator.md)
 
