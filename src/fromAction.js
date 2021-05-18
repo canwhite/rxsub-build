@@ -108,6 +108,9 @@ const fromAction = function(type, options) {
     _subscription = _obs$.subscribe(obs$$);
     return obs$$;
   }
+  //大致是通过管道符对event$处理后，生成了新的observable
+  //这个observable会被订阅，这是一整条线
+  //这样闭环就走完了
   const processEvent$ = generateObs(event$);
 
   processEvent$.pipe = function() {

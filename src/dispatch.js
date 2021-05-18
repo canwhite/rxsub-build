@@ -23,7 +23,13 @@ const dispatch = function(stateName, action) {
     const type = action;
     action = { type };
   }
-  
+  //dispatch里用到了StateMachine里定义的producer
+  /* 整体实现思路就是这样
+    function dispatch(action) {
+        //定义是在producer
+        stateMachine.producer(action);
+    }
+  */
   stateMap[stateName]["producer"](action);
 }
 

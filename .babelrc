@@ -19,7 +19,7 @@
       "@babel/plugin-syntax-dynamic-import",
       "@babel/plugin-proposal-class-properties"
       //如果要生成CommonJS标砖的文件可以打开这个
-      //"@babel/plugin-transform-modules-commonjs"
+      // ,"@babel/plugin-transform-modules-commonjs"
     ],
     "env": {
       "test": {
