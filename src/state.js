@@ -135,34 +135,10 @@ class StateMachine {
 
 function state(options) {
 
-  /* 
-  const value = 1;//状态的初始值 
-  const count$ = new BehaviorSubject(value);
-  const stateMachine = new StateMachine(count$,value);
-  
-  
-  // 传递值的方法，这个是在dispatch里边实现了
-  function dispatch(action) {
-      stateMachine.producer(action);
-  }
-    
-  //现在监听是在StateMachine，
-  count$.subscribe(val => {
-      console.log(val);
-  });
-    
-  //现在触发是在react组件内
-  setTimeout(() => {
-      //触发
-      dispatch({
-          type: "plus"
-      });
-  }, 1000);
-  */
-  //一个Observable实例，作为壳，对加入的observable进行批量管理
+  //创建了一个state类，用于subject的管理
   const state$ = new StateSubject();
-  //生成使用实例,options里边又name，defalutValue，producer
 
+  //然后就生成的subject
   const stateMachine = new StateMachine(state$, options);
   
   //用stateMap对实例进行管理
